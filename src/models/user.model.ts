@@ -1,6 +1,13 @@
 export interface User {
-    id?: number;
+    id: number;
     name: string;
+    age: number;
     email: string;
-    password: string;
+    created_at?: Date | string;
+}
+
+export interface CreateUserInput {
+    name: string;
+    age: number;
+    email: string;
 }
